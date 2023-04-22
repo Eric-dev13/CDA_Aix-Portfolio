@@ -1,0 +1,82 @@
+
+/* MEDIA QUERIE
+    Si le CSS décrit est écrit pour une vue DESKTOP et 
+    que je souhaite modifier l'apparence pour les autres supports.
+*/
+
+
+/* XX-Large devices (larger desktops, 1400px and down) 
+    LA REGLE S'APPLIQUE QUE DE 0 à 1400px */
+@media only screen and (max-width: 1400px) {
+
+}
+
+/* X-Large devices (large desktops, 1200px and down) 
+    LA REGLE S'APPLIQUE QUE DE 0 à 1200px */
+@media only screen and (max-width: 1200px) {
+
+}
+
+
+ /* Large devices (desktops, 992px and down) 
+    LA REGLE S'APPLIQUE QUE DE 0 à 992px */
+ @media only screen and (max-width: 992px) {
+
+    /* Réduit la marge (axe des X) des 2 colonnes "a propos" */
+    main>section:nth-child(3) article {
+        padding: 0 10%;
+    }
+}
+
+
+ /* Medium devices (tablets, 768px and up) */
+/* LA REGLE S'APPLIQUE DE 0 à 768px */
+@media only screen and (max-width: 768px) { 
+    /* Images portfolio */
+    main>section:nth-child(2) img{
+        /* Affiche 2 images par ligne en mode tablets  */
+        width: 40%;
+    }
+
+    /* Masque le Menu horizontale */
+    header>nav{
+        display: none;
+    }
+    /* Puis affiche le bouton burger (collapse) puis gestion du menu verticale en JS sur l'évenement "click"  */
+    .header__burger{
+        display: block;
+    }
+
+    /* Réduit la marge (axe des X) des 2 colonnes "a propos" */
+    main>section:nth-child(3) article {
+        padding: 0 7%;
+    }
+
+    main>section:nth-child(4) form {
+        width: 80%;
+    }
+    
+}
+
+/* Small devices (landscape phones, 576px and down) */
+@media only screen and (max-width: 576px) { 
+    /* Images portfolio */
+    main>section:nth-child(2) img{
+        /* Affiche 2 images par ligne en mode tablets */
+        width: 100%;
+    }
+
+    /* Permet d'empiler les 2 colonnes en 2 lignes */
+    main>section:nth-child(3) div {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
+

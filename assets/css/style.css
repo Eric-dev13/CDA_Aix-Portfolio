@@ -1,0 +1,236 @@
+/* CONFIGURER EN MODE DESKTOP */
+
+* {
+    margin: 0;
+}
+
+.display-none{
+    display: none;
+}
+
+hr {
+    color: white;
+    width: 200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 30px 0 10px 0;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+
+/*--------------------------*/
+/*          HEADER          */
+/*--------------------------*/
+header {
+    background-color: rgb(49, 49, 77);
+    padding: 0px 10px;
+    color: white;
+    position: fixed;
+    z-index: 500;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:hover {
+    color: rgb(100, 23, 23);
+}
+
+header a:active {
+    color: yellow;
+}
+
+header a:link {
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+header h1 {
+    color: white;
+}
+
+.header__burger{
+    position: relative;
+}
+
+.header__burger__link__img {
+    margin: 5px;
+    width: 50px;
+}
+
+.header__burger__nav {
+    background-color: rgb(49, 49, 77);
+    position: absolute;
+    z-index: 500;
+    top: 70px;
+}
+
+.header__burger__nav>ul{
+    padding: 0;
+    list-style: none;
+}
+
+.header__burger__nav>ul>li{
+    padding:5px
+}
+
+header>nav>ul {
+    list-style: none;
+    display: flex;
+}
+
+header>nav>ul>li {
+    justify-content: center;
+    margin: 0 10px;
+}
+
+
+
+/*--------------------------*/
+/*           MAIN           */
+/*--------------------------*/
+main {
+    position: absolute;
+    top: 70px;
+}
+
+main>section {
+    min-height: calc(100vh - 70px);
+    margin-bottom: 10px;
+    padding: 30px;
+}
+
+/* MAIN > SECTION HOME */
+main>section:nth-child(1) {
+    background-color: rgb(28, 168, 150);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+main>section:nth-child(1) h2,
+p {
+    margin-top: 20px;
+}
+
+/* MAIN > SECTION PORTFOLIO */
+main>section:nth-child(2) h2 {
+    color: rgb(49, 49, 77);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main>section:nth-child(2) article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+main>section:nth-child(2) img {
+    margin: 10px;
+    width: 25%;
+}
+
+/* MAIN > SECTION A PROPOS */
+main>section:nth-child(3) {
+    background-color: rgb(28, 168, 150);
+    color: white;
+    text-align: center;
+}
+
+main>section:nth-child(3) div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+main>section:nth-child(3) h3 {
+    color: rgb(49, 49, 77);
+}
+
+main>section:nth-child(3) article {
+    padding: 0 15%;
+}
+
+main>section:nth-child(3) article>p {
+    text-align: left;
+}
+
+/* MAIN > SECTION CONTACTER MOI */
+main>section:nth-child(4) {
+    padding: 0;
+}
+
+main>section:nth-child(4) article:nth-child(1) {
+    background-color: rgb(28, 168, 150);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>section:nth-child(4) article:nth-child(1) button {
+    background-color: transparent;
+    background: url("../image/game.png") no-repeat left;
+    background-size: 20px;
+    border: 1px solid white;
+    padding: 10px 50px;
+    color: white;
+}
+
+main>section:nth-child(4) article:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 100%;
+}
+
+main>section:nth-child(4) article:nth-child(2) h2 {
+    padding-top: 10px;
+}
+
+main>section:nth-child(4) form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+main>section:nth-child(4) form input,
+textarea,
+button {
+    margin-bottom: 10px;
+}
+
+main>section:nth-child(4) form button {
+    background-color: rgb(28, 168, 150);
+    display: block;
+    padding: 10px 50px;
+    margin: 0 auto;
+    border-radius: 5px;
+}

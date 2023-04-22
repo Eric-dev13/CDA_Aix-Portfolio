@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mise en forme CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Medias queries -->
+    <!-- <link rel="stylesheet" href="assets/css/media-min.css"> -->
+    <link rel="stylesheet" href="assets/css/media-max.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1><a href="#acceuil">BRUCE WAYNE</a></h1>
+
+        <div class="header__burger display-none">
+            <a href="#" class="header__burger__link">
+                <img src="assets/image/burger-bar.png" alt="" class="header__burger__link__img">
+            </a>
+            <div class="header__burger__nav display-none">
+                <ul>
+                    <li>
+                        <a href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="#apropos">A PROPOS</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#portfolio">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="#apropos">A PROPOS</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- nth-child(1) -->
+        <section>
+            <img src="assets/image/profile.png" alt="Image du profile de Bruce Wayne">
+            <h2>Bruce Wayne</h2>
+            <hr>
+            <p>Développeur web</p>
+        </section>
+
+        <!-- nth-child(2) -->
+        <section id="portfolio">
+            <h2>PORTFOLIO</h2>
+            <article>
+                <img src="assets/image/cabin.png" alt="cabin">
+                <img src="assets/image/cake.png" alt="cake">
+                <img src="assets/image/circus.png" alt="circus">
+                <img src="assets/image/game.png" alt="game">
+                <img src="assets/image/safe.png" alt="safe">
+                <img src="assets/image/submarine.png" alt="submarine">
+            </article>
+        </section>
+
+        <!-- A PROPOS nth-child(3) -->
+        <section id="apropos">
+            <h2>A PROPOS</h2>
+            <hr>
+            <div>
+                <article>
+                    <h3>Formation</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </article>
+                <article>
+                    <h3>Expérience</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACTEZ-MOI nth-child(4) -->
+        <section id="contact">
+            <article>
+                <button type="button">CV</button>
+            </article>
+            <article>
+                <h2>CONTACTEZ-MOI</h2>
+                <form>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom">
+                    
+                    <label for="tel">Téléphone</label>
+                    <input type="text" id="tel">
+                    
+                    <label for="mail">Mail</label>
+                    <input type="text" id="mail">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" cols="33"></textarea>
+
+                    <button>Envoyer</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        const burgerLink = document.querySelector(".header__burger__link")
+        const burgerNav = document.querySelector(".header__burger__nav")
+
+        burgerLink.addEventListener("click", ()=>{
+            burgerNav.classList.toggle('display-none') // apparait ou disparait
+        })
+
+    </script>
+</body>
+</html>
