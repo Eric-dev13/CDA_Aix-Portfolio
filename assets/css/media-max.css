@@ -39,11 +39,11 @@
     }
 
     /* Masque le Menu horizontale */
-    header>nav{
+    .header__navBar-desktop{
         display: none;
     }
     /* Puis affiche le bouton burger (collapse) puis gestion du menu verticale en JS sur l'évenement "click"  */
-    .header__burger{
+    .header__navBar-mobile{
         display: block;
     }
 
@@ -55,7 +55,6 @@
     main>section:nth-child(4) form {
         width: 80%;
     }
-    
 }
 
 /* Small devices (landscape phones, 576px and down) */

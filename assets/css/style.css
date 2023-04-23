@@ -69,41 +69,40 @@ header h1 {
     color: white;
 }
 
-.header__burger{
+.header__navBar-mobile{
     position: relative;
 }
 
-.header__burger__link__img {
+.header__navBar-mobile__link__img {
     margin: 5px;
     width: 50px;
 }
 
-.header__burger__nav {
+.header__navBar-mobile__nav {
     background-color: rgb(49, 49, 77);
     position: absolute;
     z-index: 500;
     top: 70px;
 }
 
-.header__burger__nav>ul{
+.header__navBar-mobile__nav>ul{
     padding: 0;
     list-style: none;
 }
 
-.header__burger__nav>ul>li{
+.header__navBar-mobile__nav>ul>li{
     padding:5px
 }
 
-header>nav>ul {
+.header__navBar-desktop>ul {
     list-style: none;
     display: flex;
 }
 
-header>nav>ul>li {
+.header__navBar-desktop>ul>li {
     justify-content: center;
     margin: 0 10px;
 }
-
 
 
 /*--------------------------*/
@@ -221,9 +220,7 @@ main>section:nth-child(4) form {
     width: 50%;
 }
 
-main>section:nth-child(4) form input,
-textarea,
-button {
+main>section:nth-child(4) form input,textarea,button {
     margin-bottom: 10px;
 }
 

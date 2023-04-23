@@ -15,11 +15,11 @@
     <header>
         <h1><a href="#acceuil">BRUCE WAYNE</a></h1>
 
-        <div class="header__burger display-none">
-            <a href="#" class="header__burger__link">
-                <img src="assets/image/burger-bar.png" alt="" class="header__burger__link__img">
+        <div class="header__navBar-mobile display-none">
+            <a href="#" class="header__navBar-mobile__link">
+                <img src="assets/image/burger-bar.png" alt="" class="header__navBar-mobile__link__img">
             </a>
-            <div class="header__burger__nav display-none">
+            <nav class="header__navBar-mobile__nav display-none">
                 <ul>
                     <li>
                         <a href="#portfolio">PORTFOLIO</a>
@@ -31,10 +31,10 @@
                         <a href="#contact">CONTACT</a>
                     </li>
                 </ul>
-            </div> 
+            </nav> 
         </div>
 
-        <nav>
+        <nav class="header__navBar-desktop">
             <ul>
                 <li>
                     <a href="#portfolio">PORTFOLIO</a>
@@ -114,8 +114,8 @@
     </main>
 
     <script>
-        const burgerLink = document.querySelector(".header__burger__link")
-        const burgerNav = document.querySelector(".header__burger__nav")
+        const burgerLink = document.querySelector(".header__navBar-mobile__link")
+        const burgerNav = document.querySelector(".header__navBar-mobile__nav")
 
         burgerLink.addEventListener("click", ()=>{
             burgerNav.classList.toggle('display-none') // apparait ou disparait
